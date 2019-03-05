@@ -19,7 +19,7 @@ while 1:
                 t_stamp = datetime.datetime.now()
                 t_time = datetime.datetime.now()
                 d_date = datetime.datetime.now()
-                con = psycopg2.connect(host="localhost",dbname="test",user="postgres",password="S0nd3l@1")
+                con = psycopg2.connect(host="localhost",dbname="test",user="postgres",password="xxxxx")
                 cur = con.cursor()
                 cur.execute("INSERT INTO tbltest VALUES (%s, %s, %s, %s)", (t_stamp, t_time, d_date, temp))
                 con.commit()

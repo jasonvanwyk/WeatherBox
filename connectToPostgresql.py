@@ -10,7 +10,7 @@ for loop in range (0,10):
     try:
         x = random.randint(1,101)
         #t = datetime.datetime.now()
-        con = psycopg2.connect("host='localhost', dbname = 'test', user='postgres', password='S0nd3l@1'")
+        con = psycopg2.connect("host='localhost', dbname = 'test', user='postgres', password='XXXX'")
         cur = con.cursor()
         #cur.execute("INSERT INTO tbltest VALUES (%s), (x)")
         cur.execute("INSERT INTO tbltest VALUES (1)")
