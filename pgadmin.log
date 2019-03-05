@@ -1,0 +1,27 @@
+ERROR  : 20:03:21: Error: ERROR:  collations are not supported by type date
+LINE 2:    ADD COLUMN "momentDate" date COLLATE pg_catalog."en_ZA.ut...
+                                        ^
+ERROR  : 16:58:40: Error: ERROR:  syntax error at or near ">"
+ERROR  : 16:59:16: Error: ERROR:  syntax error at or near ">"
+ERROR  : 06:15:13: ERROR:  syntax error at or near "FROM"
+LINE 2:   FROM public.tbltest;
+          ^
+ERROR  : 06:15:36: ERROR:  syntax error at or near "FROM"
+LINE 2:   FROM public.tbltest;
+          ^
+ERROR  : 06:15:54: ERROR:  syntax error at or near "FROM"
+LINE 2:   FROM public.tbltest;
+          ^
+ERROR  : 06:17:31: ERROR:  column "2019-02-17" does not exist
+LINE 2:   FROM public.tbltest WHERE d_date = "2019-02-17";
+                                             ^
+ERROR  : 06:17:48: ERROR:  operator does not exist: date = integer
+LINE 2:   FROM public.tbltest WHERE d_date = 2019-02-17;
+                                           ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+ERROR  : 06:27:37: ERROR:  column "tbltest.time_stamp" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT time_stamp, t_time, d_date, MAX(temperature)
+               ^
+ERROR  : 06:28:13: ERROR:  aggregate functions are not allowed in WHERE
+LINE 3:  WHERE MAX(temperature)
+               ^
